@@ -1,0 +1,43 @@
+<nav class="navbar sticky-top navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand">WELFARE APPLICATION</a>
+  </div>
+</nav>
+
+
+
+<div class="container">
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="/">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/user']">Users</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/members']">Members</a>
+    </li>
+  <li class="nav-item">
+    <a class="nav-link" [routerLink]="['/contributions']">Contributions</a>
+  </li>
+<li class="nav-item">
+  <a class="nav-link" [routerLink]="['/transactions']">Transactions</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" [routerLink]="['/expenses']">Expenses</a>
+</li>
+</ul>
+
+  <router-outlet></router-outlet>
+  </div>
+
+
+
+
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-dark" >Welfare application</a>
+  </div>
+</footer>
